@@ -15,4 +15,18 @@ Make sure /home/username/.gnupg is set and .gnupg folder contains public key for
 
 See and modify app/controllers/pages_controller.php code
 
-h2. Dependies
+h3. Client setting
+
+Install Thunderbird with the Enigmail extension and GnuPG.
+
+h3. Server setting
+
+Run gpg 
+Ctrl ^D
+
+gpg --import your-public-key.asc
+
+chmod 777 .gnupg/
+chmod 604 .gnupg/*
+chmod 666 .gnupg/trustdb.gpg
+chmod 644 .gnupg/pubring.gps
