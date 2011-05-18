@@ -1,0 +1,18 @@
+h1. CakePHP PGP Email encrypt Example
+
+Example how to use
+https://github.com/LubosRemplik/CakePHP-Encrypt-Plugin
+
+h2. Dependencies
+
+https://github.com/LubosRemplik/CakePHP-Encrypt-Plugin
+https://github.com/LubosRemplik/CakePHP-Swift-Plugin
+
+h2. Configuration
+
+Configure and use config/config.php.default
+Make sure /home/username/.gnupg is set and .gnupg folder contains public key for username@example.com
+
+See and modify app/controllers/pages_controller.php code
+
+h2. Dependies
