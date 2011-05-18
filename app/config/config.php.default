@@ -1,0 +1,107 @@
+<?php
+############################################################################
+# Debugging
+############################################################################
+$config['debug'] = 1;
+$config['debugFlash'] = 1;
+
+############################################################################
+# Security
+############################################################################
+$config['Security']['salt'] = 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi';
+$config['Security']['cipherSeed'] = '76859309657453542496749683645';
+
+############################################################################
+# Project
+############################################################################
+$config['Project']['name'] = 'My Project';
+$config['Project']['signature'] = 'This is signature';
+
+############################################################################
+# Cookie
+############################################################################
+$config['Cookie']['name'] = 'your-app-global-cookie-name';
+$config['Cookie']['key'] = 'put-your-random-string-here';
+
+############################################################################
+# Developer IP
+############################################################################
+$config['Developer']['ip'] = array('127.0.0.1');
+$config['Developer']['email'] = array('developer@host.com');
+
+############################################################################
+# Time
+############################################################################
+$config['Time']['zone'] = 'Europe/London';
+
+############################################################################
+# Mailer
+############################################################################
+// SMTP
+$config['ServerMailer']['backend'] = 'smtp';
+//$config['ServerMailer']['options']['host'] = "smtp.somehost.com";
+//$config['ServerMailer']['options']['port'] = 25;
+//$config['ServerMailer']['options']['username'] = "";
+//$config['ServerMailer']['options']['password'] = "";
+
+// NATIVE MAIL
+//$config['ServerMailer']['backend'] = 'mail';
+
+// SENDMAIL
+//$config['ServerMailer']['backend'] = 'sendmail';
+// Optional
+// 1.  "-bs" runs in SMTP mode so theoretically it will act like the SMTP Transport
+// 2. "-t" runs in piped mode with no feedback, but theoretically faster, though not advised
+//$config['ServerMailer']['path'] = '/usr/sbin/sendmail -bs';
+//$config['ServerMailer']['path'] = '/usr/sbin/sendmail -t';
+//$config['ServerMailer']['path'] = '/usr/sbin/exim -bs';
+
+############################################################################
+# ImageMagick
+############################################################################
+//$config['ImageMagick']['path'] = '/usr/bin/convert';
+
+############################################################################
+# Google
+############################################################################
+$config['Google']['map']['apiKey'] = 'ABQIAAAAMXcGh7ZhiBDnxjtdKV-IkxTGv8pFig_qdcIeIanIjQzecSm0lRTCxM-S1E-K-6kRS9G0npXgYU_DqQ';
+
+############################################################################
+# Facebook API
+############################################################################
+$config['Facebook']['app']['id'] = 'your-api-key-here';
+$config['Facebook']['app']['apiKey'] = 'your-api-key-here';
+$config['Facebook']['app']['secretKey'] = 'your-api-secret-key-here';
+
+############################################################################
+# Akismet API
+############################################################################
+$config['Akismet']['blog'] = 'http://' . env('SERVER_NAME');
+$config['Akismet']['key'] = 'your-askimit-key-here';
+
+############################################################################
+# Contact email addresses
+############################################################################
+$config['Contact']['recipients'] = array('contact@project.com');
+
+############################################################################
+# Registration email addresses
+############################################################################
+$config['Registration']['email'] = array('info@project.com' => $config['Project']['name']);
+
+############################################################################
+# FFMPEG location
+############################################################################
+$config['FFMPEG']['path'] = '/usr/local/bin/ffmpeg';
+
+############################################################################
+# Google analytics
+############################################################################
+$config['Google']['analytics'] = <<<EOT
+<!--
+Your google analytics code here
+-->
+EOT;
+$config['Google']['ga_username'] = '';
+$config['Google']['ga_password'] = '';
+$config['Google']['ga_report_id'] = '';

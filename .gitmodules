@@ -1,0 +1,6 @@
+[submodule "plugins/swift"]
+	path = plugins/swift
+	url = git://github.com/LubosRemplik/CakePHP-Swift-Plugin.git
+[submodule "plugins/encrypt"]
+	path = plugins/encrypt
+	url = git://github.com/LubosRemplik/CakePHP-Encrypt-Plugin.git
